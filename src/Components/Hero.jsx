@@ -74,7 +74,7 @@ const Hero = () => {
     <div className="relative h-screen overflow-hidden flex flex-col items-center justify-center bg-space">
       <div className="absolute w-full text-center mt-8 md:mt-16 bottom-16 md:bottom-16">
         <motion.div
-          className="text-white text-2xl md:text-4xl font-bold typing-animation"
+          className="text-white text-4xl md:text-4xl font-bold typing-animation"
         >
           {displayText}
         </motion.div>
