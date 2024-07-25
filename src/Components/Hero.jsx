@@ -72,6 +72,13 @@ const Hero = () => {
 
   return (
     <div className="relative h-screen overflow-hidden flex flex-col items-center justify-center bg-space">
+      <div className="absolute w-full text-center mt-8 md:mt-16 bottom-16 md:bottom-16">
+        <motion.div
+          className="text-white text-2xl md:text-4xl font-bold typing-animation"
+        >
+          {displayText}
+        </motion.div>
+      </div>
       <div className="star-animation"></div>
       <div className="relative w-80 h-80 md:w-full md:max-w-2xl md:h-128">
         <motion.div
@@ -115,13 +122,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      <div className="absolute w-full text-center mt-8 md:mt-4 bottom-8 md:bottom-16">
-        <motion.div
-          className="text-white text-2xl md:text-4xl font-bold typing-animation"
-        >
-          {displayText}
-        </motion.div>
-      </div>
+      
     </div>
   );
 };
