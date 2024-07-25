@@ -115,7 +115,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      <div className="absolute w-full text-center mt-8 md:mt-16 bottom-8 md:bottom-16">
+      <div className="absolute w-full text-center mt-8 md:mt-4 bottom-8 md:bottom-16">
         <motion.div
           className="text-white text-2xl md:text-4xl font-bold typing-animation"
         >
