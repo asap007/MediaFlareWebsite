@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint if needed */
+  .scroll-container {
+    width: 100%; /* Keep full width on mobile */
+  }
+  .scroll-content div { /* Target the logo containers */
+    width: 15rem; /* Adjust image size as needed */
+    height: 12rem; /* Adjust image size as needed */
+  }
+}
+
+
+.stripe-background {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(((100vw - 1420px) / 2) + (1420px * 0.3));
+  height: 47%;
+  margin-bottom: 40px;
+  background-image: url('/images/Stripes.svg');
+  background-size: 200% auto;
+  background-repeat: repeat-x;
+  animation: stripes 10s linear infinite;
+}
+
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint if needed */
+  .stripe-background {
+    display: none; /* Hide the stripe background on mobile */
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.text-outline {
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000,
+     2px 2px 4px rgba(0,0,0,0.5);
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.text-outline:hover {
+  text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     4px 4px 8px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
+}
+
+.glow-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  right: 7%;
+  bottom: 8%;
+  background-color: rgba(255, 255, 255, 0.155);
+  filter: blur(30px);
+  z-index: 1;
+}
+
+.glow-effect img {
+  position: relative;
+  z-index: 2;
+}
+
+.project-slide {
+  transition: transform 0.5s ease-out;
+}
+
+.glow-effect img {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+
+@keyframes twinkling {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1000px); }
+}
+
+.bg-space {
+  background: black;
+  overflow: hidden;
+}
+
+.star-animation {
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: twinkling 200s linear infinite;
+}
+
+/* Typing Animation */
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #fff;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+
+
+
