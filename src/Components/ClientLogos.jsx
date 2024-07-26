@@ -36,7 +36,7 @@ const ClientLogos = () => {
       >
         <h3>Our Clients</h3>
       </motion.div>
-      
+
       {loading ? (
         <div className="flex items-center justify-center h-[28rem]">
           <motion.div
@@ -53,7 +53,7 @@ const ClientLogos = () => {
           />
         </div>
       ) : (
-        <div className="scroll-container overflow-hidden w-full h-[28rem] mb-0 relative bg-indigo-300">
+        <div className="scroll-container overflow-hidden w-full relative bg-indigo-300">
           <motion.div
             className="scroll-content flex"
             initial={{ x: '100%' }}

@@ -30,7 +30,7 @@
   }
   .scroll-content div { /* Target the logo containers */
     width: 15rem; /* Adjust image size as needed */
-    height: 10rem; /* Adjust image size as needed */
+    height: 15rem; /* Adjust image size as needed */
   }
 }
 
