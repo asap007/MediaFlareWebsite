@@ -30,7 +30,7 @@
   }
   .scroll-content div { /* Target the logo containers */
     width: 15rem; /* Adjust image size as needed */
-    height: 12rem; /* Adjust image size as needed */
+    height: 10rem; /* Adjust image size as needed */
   }
 }
 
@@ -166,6 +166,9 @@
   from, to { border-color: transparent; }
   50% { border-color: #fff; }
 }
+
+
+
 
 
 
