@@ -75,16 +75,16 @@ const Hero = () => {
         <div className="star-animation"></div>
       </div>
 
-      <div className="relative z-10 text-center mt-10 mb-8 sm:mb-12">
+      <div className="relative z-10 text-center mt-14">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
           Take Your Business to New Heights
         </h1>
         <p className="text-indigo-200 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
-          Feeling overwhelmed? We've got you covered with innovative solutions.
+          Feeling overwhelmed?
         </p>
       </div>
 
-      <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-112 lg:h-112 mb-8 sm:mb-12">
+      <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-112 lg:h-112">
         <motion.div
           ref={spinnerRef}
           className="w-full h-full"
@@ -106,7 +106,7 @@ const Hero = () => {
                 style={{
                   top: '50%',
                   left: '50%',
-                  transform: `translate(-50%, -50%) rotate(${index * 120}deg) translate(5rem) rotate(-${index * 120}deg)`,
+                  transform: `translate(-50%, -50%) rotate(${index * 120}deg) translate(70%) rotate(-${index * 120}deg)`,
                 }}
               >
                 <div className="w-full h-full rounded-full flex items-center justify-center">

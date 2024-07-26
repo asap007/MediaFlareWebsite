@@ -29,7 +29,7 @@ const ClientLogos = () => {
   return (
     <>
       <motion.div
-        className='text-2xl text-black px-10 py-3'
+        className='text-2xl text-black px-10 py-3 font-bold'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -53,7 +53,7 @@ const ClientLogos = () => {
           />
         </div>
       ) : (
-        <div className="scroll-container overflow-hidden w-full h-[28rem] mb-0 relative bg-white">
+        <div className="scroll-container overflow-hidden w-full h-[28rem] mb-0 relative bg-indigo-300">
           <motion.div
             className="scroll-content flex"
             initial={{ x: '100%' }}

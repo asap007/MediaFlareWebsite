@@ -43,7 +43,7 @@ const Header = ({ aboutRef, servicesRef, projectsRef, contactRef }) => {
   return (
     <div 
     className={`w-screen h-20 flex justify-between items-center gap-4 px-4 py-1 ${
-      isScrolled ? 'text-black' : 'text-black'
+      isScrolled ? 'text-white' : 'text-white'
     } fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-0 ${
       isScrolled ? 'bg-customBlue bg-opacity-10' : 'bg-customBlue bg-opacity-30'
     }`}
