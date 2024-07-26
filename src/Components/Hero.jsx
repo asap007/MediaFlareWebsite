@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="star-animation"></div>
       </div>
 
-      <div className="relative z-10 text-center mt-14">
+      <div className="relative z-10 text-center md:mt-14">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
           Take Your Business to New Heights
         </h1>
