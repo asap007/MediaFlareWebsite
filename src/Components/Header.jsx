@@ -42,10 +42,10 @@ const Header = ({ aboutRef, servicesRef, projectsRef, contactRef }) => {
 
   return (
     <div 
-    className={`w-screen h-20 flex justify-between items-center gap-4 px-4 py-1 ${
-      isScrolled ? 'text-white' : 'text-white'
+    className={`w-screen h-18 flex justify-between items-center gap-4 px-4 py-1 ${
+      isScrolled ? 'text-black' : 'text-black'
     } fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-0 ${
-      isScrolled ? 'bg-customBlue bg-opacity-10' : 'bg-customBlue bg-opacity-30'
+      isScrolled ? 'bg-white bg-opacity-0' : 'bg-white bg-opacity-100'
     }`}
     >
       <div className='object-cover w-24'><img src="/images/mediaflarelogo.png" alt="Logo" /></div>
@@ -85,7 +85,7 @@ const Header = ({ aboutRef, servicesRef, projectsRef, contactRef }) => {
       </AnimatePresence>
 
       {/* Desktop Menu */}
-      <div className='hidden md:flex justify-center uppercase font-semibold items-center gap-14 text-lg'>
+      <div className='hidden md:flex justify-center uppercase font-normal items-center gap-14 text-lg'>
         <a onClick={() => scrollToSection(aboutRef)} className='relative group hover:text-[#ff3c00] transition-colors cursor-pointer'>
           About us
           <span className="block h-0.5 bg-transparent group-hover:bg-[#ff3c00] transition-all duration-300 absolute bottom-0 left-0 right-0"></span>
@@ -101,7 +101,7 @@ const Header = ({ aboutRef, servicesRef, projectsRef, contactRef }) => {
       </div>
 
       {/* Contact us button for Desktop */}
-      <div onClick={() => scrollToSection(contactRef)} className='hidden md:block text-sm uppercase font-semibold bg-black px-4 py-3 text-white rounded-md mr-4 hover:bg-[#ff3c00] transition-colors cursor-pointer'>
+      <div onClick={() => scrollToSection(contactRef)} className='hidden md:block text-sm uppercase font-normal bg-black px-4 py-3 text-white rounded-md mr-4 hover:bg-[#ff3c00] transition-colors cursor-pointer'>
         Contact us
       </div>
     </div>

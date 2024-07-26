@@ -53,7 +53,7 @@ const ClientLogos = () => {
           />
         </div>
       ) : (
-        <div className="scroll-container overflow-hidden w-full relative bg-indigo-300">
+        <div className="scroll-container overflow-hidden w-full relative bg-white">
           <motion.div
             className="scroll-content flex"
             initial={{ x: '100%' }}

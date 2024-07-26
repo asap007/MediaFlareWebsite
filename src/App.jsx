@@ -35,7 +35,7 @@ const App = () => {
         projectsRef={projectsRef}
         contactRef={contactRef}
       />
-      <div className='w-full relative bg-indigo-300'>
+      <div className='w-full relative bg-white'>
         <Hero />
         <ClientLogos />
       </div>

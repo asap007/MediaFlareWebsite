@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-        colors: {
+      colors: {
         customGray: '#545863',
         customSkin: "#FFE3E3",
         chetwodeBlue: '#6B7AA1',
@@ -14,10 +14,14 @@ export default {
         customPurple: '#FF4500',
         customBlue:'#b6eaea',
         redWood:'#5e2710',
-        blue:'#4B0082'
+        blue:'#b8ecf6',
+        greenblue: "#15C1C3"
+      },
+      fontFamily: {
+        sans: ['"Inter Tight"', 'sans-serif'],
+        edu: ['"Edu AU VIC WA NT Hand"', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
-
