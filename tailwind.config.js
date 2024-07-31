@@ -15,11 +15,15 @@ export default {
         customBlue:'#b6eaea',
         redWood:'#5e2710',
         blue:'#b8ecf6',
-        greenblue: "#15C1C3"
+        greenblue: "#15C1C3",
+        neonGreen: '#39FF14', 
+        neonPink: '#FF6EC7', 
+        neonBlue: '#1F51FF',
       },
       fontFamily: {
         sans: ['"Inter Tight"', 'sans-serif'],
         edu: ['"Edu AU VIC WA NT Hand"', 'sans-serif'],
+        anton: ['Anton', 'sans-serif'],
       },
     },
   },

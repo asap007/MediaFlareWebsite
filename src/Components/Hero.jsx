@@ -18,7 +18,7 @@ const Hero = () => {
         rotate: rotation.get() + 120,
         transition: { type: 'spring', stiffness: 20, damping: 10 }
       });
-    }, 5000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, [controls, rotation]);
@@ -69,13 +69,13 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center animated-gradient-background bg-black px-4 py-8 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center animated-gradient-background star-animation bg-black px-4 py-8 sm:px-6 lg:px-8">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
 
       <div className="relative z-10 text-center md:mt-14">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-edu" style={{fontFamily: "Copyright Fort Foundry LLC, sans-serif"}}>
+        <h1 className="text-white pulse-shadow tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton">
           <span>Take Your</span>
           <br />
           <span>Business</span>
@@ -100,7 +100,7 @@ const Hero = () => {
             {[0, 1, 2].map((_, index) => (
               <div
                 key={index}
-                className="absolute w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-orange-400 rounded-full shadow-lg"
+                className="absolute w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-red-400 rounded-full shadow-lg"
                 style={{
                   top: '50%',
                   left: '50%',
@@ -115,7 +115,7 @@ const Hero = () => {
               </div>
             ))}
           </div>
-          <div className="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-orange-600 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-xl">
+          <div className="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-red-600 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-xl">
             <div className="w-full h-full rounded-full flex items-center justify-center">
               <div className="w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-19 lg:h-19 bg-black rounded-full flex items-center justify-center shadow-inner">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-white rounded-full" />
@@ -126,7 +126,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center mb-4 sm:mb-6">
-        <p className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-edu glitch" style={{fontFamily: "Copyright Fort Foundry LLC, sans-serif"}}>
+        <p className="text-white text-3xl pulse-shadow sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton glitch">
         <span>To new</span>
           <br />
         <span>heights</span>
@@ -135,7 +135,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center">
         <motion.div
-          className="text-orange-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold glitch-effect font-edu typing-animation"
+          className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold glitch-effect font-edu typing-animation"
           style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}
         >
           {displayText}
