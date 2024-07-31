@@ -18,7 +18,7 @@ const Hero = () => {
         rotate: rotation.get() + 120,
         transition: { type: 'spring', stiffness: 20, damping: 10 }
       });
-    }, 1000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, [controls, rotation]);
