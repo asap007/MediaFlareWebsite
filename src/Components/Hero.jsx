@@ -74,8 +74,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
 
-      <div className="relative z-10 text-center md:mt-14">
-        <h1 className="text-white pulse-shadow tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton">
+      <div className="relative z-10 text-center p-8 md:mt-14">
+        <h1 className="text-white pulse-shadow tracking-wider text-5xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton">
           <span>Take Your</span>
           <br />
           <span>Business</span>
@@ -126,7 +126,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center mb-4 sm:mb-6">
-        <p className="text-white text-3xl pulse-shadow sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton glitch">
+        <p className="text-white text-5xl pulse-shadow sm:text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase leading-tight mb-4 font-anton glitch">
         <span>To new</span>
           <br />
         <span>heights</span>
