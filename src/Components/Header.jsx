@@ -45,7 +45,7 @@ const Header = ({ aboutRef, servicesRef, projectsRef, contactRef }) => {
     className={`w-screen h-18 flex justify-between items-center gap-4 px-4 py-1 ${
       isScrolled ? 'text-black' : 'text-black'
     } fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-0 ${
-      isScrolled ? 'bg-white bg-opacity-0' : 'bg-white bg-opacity-100'
+      isScrolled ? 'bg-white bg-opacity-50' : 'bg-white bg-opacity-100'
     }`}
     >
       <div className='object-cover w-24'><img src="/images/mediaflarelogo.png" alt="Logo" /></div>
